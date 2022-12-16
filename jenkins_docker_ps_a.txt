@@ -1,0 +1,20 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/docker_image_build
+SSH: Connecting from host [jenkins-instance]
+SSH: Connecting with configuration [Jenkins-server] ...
+SSH: Creating session: username [dockeradmin], hostname [10.0.0.27], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [sudo docker ps -a;] ...
+SSH: EXEC: connected
+CONTAINER ID   IMAGE           COMMAND     CREATED          STATUS                      PORTS     NAMES
+4a68b6413813   alpine:latest   "/bin/sh"   27 seconds ago   Exited (0) 26 seconds ago             docker_myapp_1
+SSH: EXEC: completed after 200 ms
+SSH: Disconnecting configuration [Jenkins-server] ...
+SSH: Transferred 0 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+[docker_image_build] $ /bin/sh -xe /tmp/jenkins2276641033811276258.sh
+Finished: SUCCESS

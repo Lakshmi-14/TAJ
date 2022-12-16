@@ -1,0 +1,39 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/install_docker
+SSH: Connecting from host [jenkins-instance]
+SSH: Connecting with configuration [Ansible-Server] ...
+SSH: Creating session: username [ansible], hostname [10.0.0.49], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [cd ;
+ansible-playbook install_docker.yml;] ...
+SSH: EXEC: connected
+
+PLAY [install Docker] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.0.27]
+
+TASK [Install apt-transport-https] *********************************************
+changed: [10.0.0.27]
+
+TASK [Add signing key] *********************************************************
+changed: [10.0.0.27]
+
+TASK [Add repository into sources list] ****************************************
+changed: [10.0.0.27]
+
+TASK [Install Docker] **********************************************************
+changed: [10.0.0.27]
+
+PLAY RECAP *********************************************************************
+10.0.0.27                  : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+SSH: EXEC: completed after 52,090 ms
+SSH: Disconnecting configuration [Ansible-Server] ...
+SSH: Transferred 0 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

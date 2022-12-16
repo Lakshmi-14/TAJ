@@ -1,0 +1,38 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: update package manager
+      apt:
+        update_cache: yes
+
+    - name: installing java
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    - name: installing jenkins apt repository
+      apt_key:
+        url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
+        state: present
+
+    - name: configure repository
+      apt_repository:
+        repo: "deb https://pkg.jenkins.io/debian-stable binary/"
+        state: present
+
+    - name: jenkins installation
+      apt:
+        name: jenkins
+        update_cache: yes
+
+    - name: running jenkins
+      service:
+        name: jenkins
+        state: started
+
+    - name: installing maven
+      apt:
+        name: maven
+        state: present
