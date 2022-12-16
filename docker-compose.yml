@@ -1,5 +1,5 @@
 services:
   myapp:
-    image: nginx:latest
+    image: ${image}
     ports:
-      -"80:80"
+      - ${port}
