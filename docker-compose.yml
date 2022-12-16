@@ -1,5 +1,5 @@
 services:
-  myapp:
+  first-app:
     image: ${image}
     ports:
       - ${port}
