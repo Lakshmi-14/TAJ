@@ -1,3 +1,4 @@
+
 [0m[1maws_key_pair.new_key: Refreshing state... [id=new-key][0m
 [0m[1maws_vpc.main_vpc: Refreshing state... [id=vpc-0032ae18e9d2a0727][0m
 [0m[1maws_internet_gateway.igw: Refreshing state... [id=igw-079195d22a3a02bdf][0m
@@ -128,8 +129,10 @@ Terraform will perform the following actions:
 [1mChanges to Outputs:[0m[0m
   [33m~[0m [0m[1m[0mAnsible-PublicIP[0m[0m = "43.206.214.12" [33m->[0m [0m"52.68.203.5"
   [33m~[0m [0m[1m[0mjenkins-PublicIP[0m[0m = "43.206.234.198" [33m->[0m [0m"52.198.203.191"
-[90m
-─────────────────────────────────────────────────────────────────────────────[0m
+[0m[1m
+Do you want to perform these actions?[0m
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
 
-Note: You didn't use the -out option to save this plan, so Terraform can't
-guarantee to take exactly these actions if you run "terraform apply" now.
+  [1mEnter a value:[0m [0m
+Apply cancelled.
